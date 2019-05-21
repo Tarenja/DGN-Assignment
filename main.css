@@ -2,12 +2,35 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  padding: 20px;
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.content {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 27px;
+  color: #f1c40f;
+  border: 2px solid #f1c40f;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a:visited {
+  color: #f1c40f;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #e59866;
 }
 
 .overlay {
@@ -54,13 +77,8 @@ svg path {
   stroke-linecap: round;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+@media screen and (max-width: 454px) {
+  iframe {
+    width: 80%;
   }
 }
